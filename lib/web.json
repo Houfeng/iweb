@@ -1,0 +1,10 @@
+{
+    "debugMode": true,
+    "parsers": {
+        "text/plain": "$./parsers/json"
+    },
+    "cache": {
+        "maxAge": 0,
+        "lastModified": true
+    }
+}
