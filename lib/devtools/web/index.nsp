@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>devtools</title>
+</head>
+
+<body>
+    <h1>工具列表</h1>
+    <ul>
+        <li><a target='inspector' href="/-dev/inspector">检查器</a>
+        </li>
+        <li><a target='qr' href="./qr.html">地址二维码生成器</a>
+        </li>
+    </ul>
+
+    <h1>监视页面</h1>
+    <ul>
+        <li>...</li>
+    </ul>
+</body>
+
+</html>
