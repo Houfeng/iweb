@@ -1,5 +1,6 @@
 {
-    "debugMode": true,
+    "debugMode": false,
+    "defaults": ["index.nsp"],
     "parsers": {
         "text/plain": "$./parsers/json"
     },

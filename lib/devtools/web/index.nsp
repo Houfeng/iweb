@@ -17,7 +17,9 @@
 
     <h1>监视页面</h1>
     <ul>
-        <li>...</li>
+        <% $.each(this.server.socketServer.clients,function(id,client){ client.pageInfo=client.pageInfo||{} %>
+        <li><%= client.pageInfo.url %> <a href='javascript:;' onclick='nsp.call("refrestPage","<%=id%>")'>刷新</a></li>
+        <% }) %>
     </ul>
 </body>
 
