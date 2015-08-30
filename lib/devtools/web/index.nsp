@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>devtools</title>
+</head>
+
+<body>
+    <h1>工具</h1>
+    <ul>
+        <li><a target='inspector' href="/-dev/inspector">Inspector</a>
+        </li>
+        <li><a target='qr' href="/-dev/reloader/index.nsp">Reloader</a>
+        </li>
+    </ul>
+    <h1>地址</h1>
+    <select id='localIp' nsp-id='localIp' onchange='nsp.call("switchLocalIp")'>
+        <% $.each(this.localIpArray,function(i,ip){ var s=ip.split('.')[0]; %>
+            <% if(s=='192'||s=='172'||s=='10'){ %>
+                <option value='<%=ip%>' selected='selected'><%=ip%></option>
+            <% }else{ %>
+                <option value='<%=ip%>'><%=ip%></option>
+            <% } %>
+        <% }) %>
+    </select>
+    <p>
+        <div id='localIpCode'></div>
+    </p>
+    <script src='./scripts/jquery.js'></script>
+    <script src='./scripts/jquery.qrcode.js'></script>
+    <script>
+    var port = <%= this.port %>;
+    $('#localIpCode').qrcode($('#localIp').val()+':'+port);
+    </script>
+</body>
+
+</html>
