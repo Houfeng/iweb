@@ -1,3 +1,5 @@
-console.log('hello 世界');
+console.log('....');
 
-      
+setTimeout(function(){
+    console.log('hello');
+},2000);

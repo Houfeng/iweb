@@ -1,4 +1,8 @@
-body{
-    font-size:50px;
-    color:black;
+body {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: red;
 }

@@ -3,18 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>devtools</title>
+    <title>Reloader</title>
 </head>
 
 <body>
-    <h1>工具列表</h1>
-    <ul>
-        <li><a target='inspector' href="/-dev/inspector">检查器</a>
-        </li>
-        <li><a target='qr' href="./qr.html">地址二维码生成器</a>
-        </li>
-    </ul>
-
     <h1>监视页面</h1>
     <ul>
         <% $.each(this.server.socketServer.clients,function(id,client){ client.pageInfo=client.pageInfo||{} %>

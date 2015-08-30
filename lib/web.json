@@ -6,6 +6,6 @@
     },
     "cache": {
         "maxAge": 0,
-        "lastModified": true
+        "lastModified": false
     }
 }
