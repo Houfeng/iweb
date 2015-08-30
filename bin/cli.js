@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 
+var path = require('path');
 var iweb = require('../');
 var CmdLine = require('cmdline');
 var pkg = require('../package.json');
+
+var cwd = process.cwd();
 
 var cml = new CmdLine();
 
@@ -11,9 +14,8 @@ if (cml.options.has('-v')) {
 } else {
     var server = new iweb.Server({
         port: cml.args[0],
-        folder: cml.args[1]
+        folder: path.resolve(cwd, cml.args[1] || './')
     });
-
     server.start(function(err, info) {
         if (err) {
             console.error(err);
