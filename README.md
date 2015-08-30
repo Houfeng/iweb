@@ -19,9 +19,10 @@ iweb [port]
 
 ###工具
 iweb 启动后可以直接在浏览器中访问 locahost[:端口]/-dev/tools
-包括:
-    1. Inspector（基于 weinre 的页面检查工具）
-    2. Reloader (实时刷新，在工具页能看到所有连接中的页面)
+
+提供了如下工具:
+1. Inspector（基于 weinre 的页面检查工具）
+2. Reloader (实时刷新，在工具页能看到所有连接中的页面)
 
 同时，在 tools 页面，还会生成访问地址的 QRCode (二维码)，
 移动设备可以扫描访问，省去输入的麻烦。
