@@ -30,8 +30,8 @@
     <script src='./scripts/jquery.js'></script>
     <script src='./scripts/jquery.qrcode.js'></script>
     <script>
-    var port = <%= this.port %>;
-    $('#localIpCode').qrcode($('#localIp').val()+':'+port);
+        var port = <%= this.port %> ;
+        $('#localIpCode').qrcode('http://' + $('#localIp').val() + ':' + port);
     </script>
 </body>
 

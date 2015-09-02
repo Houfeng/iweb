@@ -19,7 +19,7 @@ iweb [port]
 ```
 
 ###工具
-iweb 启动后可以直接在浏览器中访问 locahost[:端口]/-dev/tools
+iweb 启动后可以直接在浏览器中访问 locahost[:端口]/-dev
 
 提供了如下工具:
 

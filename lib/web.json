@@ -4,6 +4,9 @@
     "parsers": {
         "text/plain": "$./parsers/json"
     },
+    "headers": {
+        "Cache-Control": "no-cache"
+    },
     "cache": {
         "maxAge": 0,
         "lastModified": false
