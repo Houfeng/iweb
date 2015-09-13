@@ -1,24 +1,25 @@
-###介绍
+### 介绍
 iweb 一个用于前端开发工具，
 可以在文件发生变化时，实时刷新页面或实时无刷新的更新 “样式、图片” 等资源。
 
-###安装
+### 安装
 ```javascript
 [sudo] npm install iweb -g
 ```
 
-###更新
+### 更新
 ```javascript
 [sudo] npm update iweb -g
 ```
 
-###启动
+### 启动
 ```javascript
 cd <工作目录>
 iweb [port]
 ```
+启动后用PC或移动设备的浏览器直接访问即可。
 
-###工具
+### 工具
 iweb 启动后可以直接在浏览器中访问 locahost[:端口]/-dev
 
 提供了如下工具:
