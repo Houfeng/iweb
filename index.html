@@ -4,82 +4,78 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>iweb by Houfeng</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/Houfeng/iweb">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/Houfeng/iweb/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/Houfeng/iweb/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
-
     <div class="wrapper">
+      <header>
+        <h1>iweb</h1>
+        <p>一个用于前端开发的实时预览工具</p>
 
+        <p class="view"><a href="https://github.com/Houfeng/iweb">View the Project on GitHub <small>Houfeng/iweb</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Houfeng/iweb/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Houfeng/iweb/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Houfeng/iweb">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
       <section>
-        <div id="title">
-          <h1>iweb</h1>
-          <p>一个用于前端开发的实时预览工具</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/Houfeng">Houfeng</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
         <h3>
 <a id="介绍" class="anchor" href="#%E4%BB%8B%E7%BB%8D" aria-hidden="true"><span class="octicon octicon-link"></span></a>介绍</h3>
 
 <p>iweb 一个用于前端开发工具，
-可以在文件发生变化时，实时刷新页面或实时无刷新的更新 “样式、图片” 等资源。</p>
+可以在文件发生变化时，实时自动在浏览器中刷新页面，或者精确的识别不同类型更新内容，
+更细粒度的实时无刷新的更新 "样式、图片" 等资源,
+无需任何浏览器插件，无需手动添加 "client-script", 可以同时连接不限数量的多个设备。</p>
+
+<p>iweb 基于 nokit 开发，<a href="https://github.com/Houfeng/nokit">nokit 相关介绍参考这里</a></p>
 
 <h3>
 <a id="安装" class="anchor" href="#%E5%AE%89%E8%A3%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>安装</h3>
 
-<div class="highlight highlight-javascript"><pre>[sudo] npm install iweb <span class="pl-k">-</span>g</pre></div>
+<div class="highlight highlight-source-js"><pre>[sudo] npm install iweb <span class="pl-k">-</span>g</pre></div>
 
 <h3>
 <a id="更新" class="anchor" href="#%E6%9B%B4%E6%96%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>更新</h3>
 
-<div class="highlight highlight-javascript"><pre>[sudo] npm update iweb <span class="pl-k">-</span>g</pre></div>
+<div class="highlight highlight-source-js"><pre>[sudo] npm update iweb <span class="pl-k">-</span>g</pre></div>
 
 <h3>
 <a id="启动" class="anchor" href="#%E5%90%AF%E5%8A%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>启动</h3>
 
-<div class="highlight highlight-javascript"><pre>cd <span class="pl-k">&lt;</span>工作目录<span class="pl-k">&gt;</span>
+<div class="highlight highlight-source-js"><pre>cd <span class="pl-k">&lt;</span>工作目录<span class="pl-k">&gt;</span>
 iweb [port]</pre></div>
 
-<p>启动后用PC或移动设备的浏览器直接访问即可。</p>
+<p>启动后用PC或移动设备的浏览器直接访问 http://localhost[:端口]，
+在文件发生任何变化时，iweb 会即时完成浏览器端刷新或更新。</p>
 
 <h3>
-<a id="工具" class="anchor" href="#%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>工具</h3>
+<a id="在手机中访问" class="anchor" href="#%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%AD%E8%AE%BF%E9%97%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>在手机中访问</h3>
 
-<p>iweb 启动后可以直接在浏览器中访问 locahost[:端口]/-dev</p>
+<p>在手机上输入一个 url 是比较麻烦的， 可以通过访问 http://locahost[:端口]/-dev 可以打开 “工具” 页面，
+在这个面页会为本机的每一个 ip 生成一个 “二维码”，可以用手机扫描，轻松访问。</p>
 
-<p>提供了如下工具:</p>
+<h3>
+<a id="审查页面" class="anchor" href="#%E5%AE%A1%E6%9F%A5%E9%A1%B5%E9%9D%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>审查页面</h3>
 
-<ol>
-<li>Inspector（基于 weinre 的页面检查工具）</li>
-<li>Reloader (实时刷新，在工具页能看到所有连接中的页面)</li>
-</ol>
-
-<p>同时，在 tools 页面，还会生成访问地址的 QRCode (二维码)，
-移动设备可以扫描访问，省去输入的麻烦。</p>
+<p>iweb 提供一个，基于 weinre（用 <a href="https://github.com/Houfeng/nokit">nokit</a> 重写的版本）的页面检查工具。
+可以通过访问 http://locahost[:端口]/-dev 可以打开 “工具” 页面，
+然后点击 "Inspector" 打开，类似 chrome devtool 的 "页面审查工具"</p>
       </section>
-
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Houfeng">Houfeng</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
