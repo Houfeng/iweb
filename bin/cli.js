@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/* global process */
+
 var path = require('path');
 var iweb = require('../');
 var CmdLine = require('cmdline');
@@ -16,7 +18,7 @@ if (cml.options.has('-v')) {
         port: cml.args[0],
         folder: path.resolve(cwd, cml.args[1] || './')
     });
-    server.start(function(err, info) {
+    server.start(function (err, info) {
         if (err) {
             console.error(err);
         } else {
